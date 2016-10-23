@@ -1,0 +1,135 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>todo list</title>
+</head>
+<body ng-app="myApp">
+
+    <link rel="stylesheet" href="bower_components/angularjs-datepicker/dist/angular-datepicker.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="bower_components/ng-dialog/css/ngDialog-theme-default.min.css">
+    <link rel="stylesheet" href="bower_components/ng-dialog/css/ngDialog.min.css">
+
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/ng-dialog/js/ngDialog.min.js"></script>
+    <script type="text/javascript" src="bower_components/angularjs-datepicker/dist/angular-datepicker.min.js"></script>
+
+
+
+    <script src="js/app.js"></script>
+    <script src="popup-detail.js"></script>
+
+    <style>
+        span.done-true {
+            color: gray;
+        }
+        span.done-false {
+            color: green;
+        }
+        span[contenteditable ="true"]{
+            background: gray;
+            padding: 3px;
+        }
+        .ngdialog.ngdialog-theme-default .ngdialog-content{
+            width:90%;
+        }
+        .mgt-7{
+            margin-top: 7px;
+        }
+    </style>
+
+
+    <div ng-controller="MainController" style="margin-top:20px;padding:50px;">
+
+        <div class="col-xs-12 form-group">
+            <form ng-submit="addTodo()">
+                <span class="form-group">
+                    <input class="form-control" type="text" ng-model="todoText" placeholder="title" />
+                    <br/>
+                    <input class="form-control" type="text" ng-model="todoDetail" placeholder="description" />
+                </span>
+                <br/>
+                <span class="form-group">
+                     <button type="submit"  class="btn btn-success">Add</button>
+                </span>
+            </form>
+        </div>
+
+        <div class="col-xs-12 form-group">
+             <span >
+                 <button  type="button" ng-click="toggleFilter('onTime')"  class="btn btn-primary">On Time</button>
+
+                 <button  type="submit" ng-click="toggleFilter('complete')"  class="btn btn-primary">Complete</button>
+            </span>
+        </div>
+        <div class="col-xs-12 form-group">
+            <span >{{ total() }} of {{ todos.length }}</span>
+
+        </div>
+
+        <div class="col-xs-12 form-group">
+            <table class="table table-condensed">
+                <tr class="clo-xs-12">
+                    <td class="col-xs-2 active">
+                        Move
+                    </td>
+                    <td class="col-xs-4 active">
+                        Title
+                    </td>
+                    <td class="col-xs-2 active">
+                    </td>
+                    <td class="col-xs-2 active" >
+                    </td>
+                    <td class="col-xs-2 active" >
+                    </td>
+                </tr>
+                <tr class="clo-xs-12" ng-repeat="todo in todos | filter: status ? true : false track by $index">
+                    <td class="col-xs-2 active">
+                        <input type="checkbox" data-ng-model="todo.done" ng-change="watchCheckbox(todo)">
+                    </td>
+                    <td class="col-xs-4 active">
+                        <span class="done-{{ todo.done }}">{{ todo.text }}</span>
+                    </td>
+                    <td class="col-xs-2 active">
+                    </td>
+                    <td class="col-xs-2 active" >
+                        <button type="button" ng-click="openDetail(todo)" class="btn btn-info">show detail</button>
+                    </td>
+                    <td class="col-xs-2 active" >
+                        <button type="button" ng-click="removeByid(todo)" class="btn btn-danger">remove</button>
+                    </td>
+                </tr>
+                <tr data-ng-if="todos == undefined || todos == '' || todos.length <= 0">
+                    <td class="col-xs-2 active">
+                    </td>
+                    <td class="col-xs-4 active">
+                        <span style="text-align:center;"> data not found</span>
+                    </td>
+                    <td class="col-xs-2 active">
+                    </td>
+                    <td class="col-xs-2 active">
+                    </td>
+                    <td class="col-xs-2 active">
+                    </td>
+                </tr>
+            </table>
+
+
+
+
+        </div>
+
+
+    </div>
+     <!--controller-->
+
+
+
+
+
+
+</body>
+</html>

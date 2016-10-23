@@ -1,0 +1,50 @@
+<div style="padding:5%;">
+
+
+        <div style="text-align:right;padding:5px;">
+            <button type="button" ng-if="!canEdit" ng-click="toggleEdit()" class="btn btn-warning">Edit</button>
+            <button type="button" ng-if="canEdit" ng-click="updateItem(dataDetail)" class="btn btn-success">Update</button>
+            <button type="button" ng-click="close()" class="btn btn-danger">Close</button>
+        </div>
+
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Id</label>
+            <div class="col-sm-10 mgt-7">
+                <span>{{ dataDetail.id }}</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Title</label>
+            <div class="col-sm-10">
+                <input ng-if="canEdit" type="text" class="form-control" ng-model="dataDetail.text">
+            </div>
+            <div class="col-sm-10 mgt-7">
+                <span  ng-if="!canEdit">{{ dataDetail.text }}</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Date</label>
+            <div class="col-sm-10">
+                <datepicker ng-if="canEdit" date-format="dd MMM yy">
+                    <input class="form-control" ng-model="dataDetail.date"
+                           type="text" required/>
+                </datepicker>
+            </div>
+            <div class="col-sm-10 mgt-7">
+                <span  ng-if="!canEdit">{{ dataDetail.date }}</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Detail</label>
+            <div class="col-sm-10">
+                <input ng-if="canEdit" type="text" class="form-control" ng-model="dataDetail.detail">
+            </div>
+            <div class="col-sm-10 mgt-7">
+                <span  ng-if="!canEdit">{{ dataDetail.detail }}</span>
+            </div>
+        </div>
+    </form>
+
+
+</div>

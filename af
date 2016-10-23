@@ -1,0 +1,366 @@
+[1mdiff --git a/.idea/workspace.xml b/.idea/workspace.xml[m
+[1mindex 00e2810..42b4e39 100644[m
+[1m--- a/.idea/workspace.xml[m
+[1m+++ b/.idea/workspace.xml[m
+[36m@@ -21,21 +21,23 @@[m
+   </component>[m
+   <component name="FileEditorManager">[m
+     <leaf>[m
+[31m-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">[m
+[32m+[m[32m      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">[m
+         <entry file="file://$PROJECT_DIR$/js/app.js">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state vertical-scroll-proportion="0.0">[m
+[31m-              <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />[m
+[31m-              <folding />[m
+[32m+[m[32m            <state vertical-scroll-proportion="0.36474165">[m
+[32m+[m[32m              <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />[m
+[32m+[m[32m              <folding>[m
+[32m+[m[32m                <marker date="1477246639425" expanded="true" signature="1140:1197" placeholder="{...}" />[m
+[32m+[m[32m              </folding>[m
+             </state>[m
+           </provider>[m
+         </entry>[m
+       </file>[m
+[31m-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">[m
+[32m+[m[32m      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">[m
+         <entry file="file://$PROJECT_DIR$/index.html">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state vertical-scroll-proportion="0.91564417">[m
+[31m-              <caret line="44" column="78" selection-start-line="44" selection-start-column="78" selection-end-line="44" selection-end-column="78" />[m
+[32m+[m[32m            <state vertical-scroll-proportion="-9.333333">[m
+[32m+[m[32m              <caret line="93" column="74" selection-start-line="93" selection-start-column="74" selection-end-line="93" selection-end-column="74" />[m
+               <folding>[m
+                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />[m
+                 <element signature="n#style#0;n#span#0;n#td#1;n#tr#2;n#table#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />[m
+[36m@@ -48,10 +50,8 @@[m
+         <entry file="file://$PROJECT_DIR$/popup-detail.js">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+             <state vertical-scroll-proportion="0.0">[m
+[31m-              <caret line="40" column="49" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />[m
+[31m-              <folding>[m
+[31m-                <marker date="1477242111385" expanded="true" signature="1369:1633" placeholder="//..." />[m
+[31m-              </folding>[m
+[32m+[m[32m              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />[m
+[32m+[m[32m              <folding />[m
+             </state>[m
+           </provider>[m
+         </entry>[m
+[36m@@ -59,7 +59,7 @@[m
+       <file leaf-file-name="popup-detail.html" pinned="false" current-in-tab="false">[m
+         <entry file="file://$PROJECT_DIR$/popup-detail.html">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state vertical-scroll-proportion="-12.666667">[m
+[32m+[m[32m            <state vertical-scroll-proportion="0.0">[m
+               <caret line="19" column="49" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="49" />[m
+               <folding>[m
+                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />[m
+[36m@@ -105,7 +105,7 @@[m
+   </component>[m
+   <component name="ProjectFrameBounds">[m
+     <option name="x" value="569" />[m
+[31m-    <option name="y" value="59" />[m
+[32m+[m[32m    <option name="y" value="51" />[m
+     <option name="width" value="1351" />[m
+     <option name="height" value="1029" />[m
+   </component>[m
+[36m@@ -132,6 +132,7 @@[m
+       <sortByType />[m
+     </navigator>[m
+     <panes>[m
+[32m+[m[32m      <pane id="Scope" />[m
+       <pane id="ProjectPane">[m
+         <subPane>[m
+           <PATH>[m
+[36m@@ -166,7 +167,6 @@[m
+           </PATH>[m
+         </subPane>[m
+       </pane>[m
+[31m-      <pane id="Scope" />[m
+       <pane id="Scratches" />[m
+     </panes>[m
+   </component>[m
+[36m@@ -239,26 +239,26 @@[m
+     <servers />[m
+   </component>[m
+   <component name="ToolWindowManager">[m
+[31m-    <frame x="569" y="59" width="1351" height="1029" extended-state="0" />[m
+[31m-    <editor active="false" />[m
+[32m+[m[32m    <frame x="569" y="51" width="1351" height="1029" extended-state="0" />[m
+[32m+[m[32m    <editor active="true" />[m
+     <layout>[m
+       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13328314" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />[m
+       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />[m
+       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />[m
+[31m-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />[m
+[31m-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2174393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2164009" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />[m
+[31m-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />[m
+       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />[m
+     </layout>[m
+   </component>[m
+   <component name="Vcs.Log.UiProperties">[m
+[36m@@ -280,11 +280,53 @@[m
+     <entry file="file://$PROJECT_DIR$/js/app.js">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+         <state vertical-scroll-proportion="0.0">[m
+[32m+[m[32m          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <marker date="1477246639425" expanded="true" signature="1140:1197" placeholder="{...}" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/index.html">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state vertical-scroll-proportion="0.0">[m
+           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />[m
+[32m+[m[32m            <element signature="n#style#0;n#span#0;n#td#1;n#tr#2;n#table#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/popup-detail.js">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state vertical-scroll-proportion="0.0">[m
+[32m+[m[32m          <caret line="40" column="49" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />[m
+           <folding />[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/popup-detail.html">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state vertical-scroll-proportion="0.0">[m
+[32m+[m[32m          <caret line="19" column="49" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="49" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />[m
+[32m+[m[32m            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/js/app.js">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state vertical-scroll-proportion="0.0">[m
+[32m+[m[32m          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <marker date="1477246639425" expanded="true" signature="1140:1197" placeholder="{...}" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+     <entry file="file://$PROJECT_DIR$/index.html">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+         <state vertical-scroll-proportion="0.0">[m
+[36m@@ -300,9 +342,7 @@[m
+       <provider selected="true" editor-type-id="text-editor">[m
+         <state vertical-scroll-proportion="0.0">[m
+           <caret line="40" column="49" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />[m
+[31m-          <folding>[m
+[31m-            <marker date="1477242111385" expanded="true" signature="1369:1633" placeholder="//..." />[m
+[31m-          </folding>[m
+[32m+[m[32m          <folding />[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[36m@@ -328,7 +368,9 @@[m
+       <provider selected="true" editor-type-id="text-editor">[m
+         <state vertical-scroll-proportion="0.0">[m
+           <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />[m
+[31m-          <folding />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <marker date="1477246639425" expanded="true" signature="1140:1197" placeholder="{...}" />[m
+[32m+[m[32m          </folding>[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[36m@@ -354,7 +396,9 @@[m
+       <provider selected="true" editor-type-id="text-editor">[m
+         <state vertical-scroll-proportion="0.0">[m
+           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />[m
+[31m-          <folding />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <marker date="1477246639425" expanded="true" signature="1140:1197" placeholder="{...}" />[m
+[32m+[m[32m          </folding>[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[36m@@ -390,42 +434,42 @@[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/js/app.js">[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/popup-detail.html">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+         <state vertical-scroll-proportion="0.0">[m
+[31m-          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />[m
+[31m-          <folding />[m
+[32m+[m[32m          <caret line="19" column="49" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="49" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />[m
+[32m+[m[32m            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/popup-detail.js">[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/index.html">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state vertical-scroll-proportion="0.0">[m
+[31m-          <caret line="40" column="49" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />[m
+[32m+[m[32m        <state vertical-scroll-proportion="-9.333333">[m
+[32m+[m[32m          <caret line="93" column="74" selection-start-line="93" selection-start-column="74" selection-end-line="93" selection-end-column="74" />[m
+           <folding>[m
+[31m-            <marker date="1477242111385" expanded="true" signature="1369:1633" placeholder="//..." />[m
+[32m+[m[32m            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />[m
+[32m+[m[32m            <element signature="n#style#0;n#span#0;n#td#1;n#tr#2;n#table#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />[m
+           </folding>[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/popup-detail.html">[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/popup-detail.js">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state vertical-scroll-proportion="-12.666667">[m
+[31m-          <caret line="19" column="49" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="49" />[m
+[31m-          <folding>[m
+[31m-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />[m
+[31m-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />[m
+[31m-          </folding>[m
+[32m+[m[32m        <state vertical-scroll-proportion="0.0">[m
+[32m+[m[32m          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />[m
+[32m+[m[32m          <folding />[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/index.html">[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/js/app.js">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state vertical-scroll-proportion="0.91564417">[m
+[31m-          <caret line="44" column="78" selection-start-line="44" selection-start-column="78" selection-end-line="44" selection-end-column="78" />[m
+[32m+[m[32m        <state vertical-scroll-proportion="0.36474165">[m
+[32m+[m[32m          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />[m
+           <folding>[m
+[31m-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />[m
+[31m-            <element signature="n#style#0;n#span#0;n#td#1;n#tr#2;n#table#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />[m
+[32m+[m[32m            <marker date="1477246639425" expanded="true" signature="1140:1197" placeholder="{...}" />[m
+           </folding>[m
+         </state>[m
+       </provider>[m
+[1mdiff --git a/index.html b/index.html[m
+[1mindex b5e38fe..3fd2371 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -54,7 +54,6 @@[m
+                 <br/>[m
+                 <span class="form-group">[m
+                      <button type="submit"  class="btn btn-success">Add</button>[m
+[31m-                     <!--<button type="button" ng-click="removeItem()" class="btn btn-danger">select remove</button>-->[m
+                 </span>[m
+             </form>[m
+         </div>[m
+[36m@@ -77,11 +76,9 @@[m
+                     <td class="col-xs-2 active">[m
+                         Move[m
+                     </td>[m
+[31m-                    <td class="col-xs-2 active">[m
+[32m+[m[32m                    <td class="col-xs-4 active">[m
+                         Title[m
+                     </td>[m
+[31m-                    <td class="col-xs-2 active" >[m
+[31m-                    </td>[m
+                     <td class="col-xs-2 active">[m
+                     </td>[m
+                     <td class="col-xs-2 active" >[m
+[36m@@ -93,11 +90,9 @@[m
+                     <td class="col-xs-2 active">[m
+                         <input type="checkbox" data-ng-model="todo.done" ng-change="watchCheckbox(todo)">[m
+                     </td>[m
+[31m-                    <td class="col-xs-2 active">[m
+[32m+[m[32m                    <td class="col-xs-4 active">[m
+                         <span class="done-{{ todo.done }}">{{ todo.text }}</span>[m
+                     </td>[m
+[31m-                    <td class="col-xs-2 active" >[m
+[31m-                    </td>[m
+                     <td class="col-xs-2 active">[m
+                     </td>[m
+                     <td class="col-xs-2 active" >[m
+[36m@@ -110,7 +105,7 @@[m
+                 <tr data-ng-if="todos == undefined || todos == '' || todos.length <= 0">[m
+                     <td class="col-xs-2 active">[m
+                     </td>[m
+[31m-                    <td class="col-xs-2 active">[m
+[32m+[m[32m                    <td class="col-xs-4 active">[m
+                         <span style="text-align:center;"> data not found</span>[m
+                     </td>[m
+                     <td class="col-xs-2 active">[m
+[36m@@ -119,8 +114,6 @@[m
+                     </td>[m
+                     <td class="col-xs-2 active">[m
+                     </td>[m
+[31m-                    <td class="col-xs-2 active">[m
+[31m-                    </td>[m
+                 </tr>[m
+             </table>[m
+ [m
+[1mdiff --git a/js/app.js b/js/app.js[m
+[1mindex 94cfe33..9b98398 100644[m
+[1m--- a/js/app.js[m
+[1m+++ b/js/app.js[m
+[36m@@ -28,9 +28,9 @@[m [mmyApp.controller('MainController', function($scope, $log, $filter, ngDialog) {[m
+     var _idList = [];[m
+ [m
+     localStorage.setItem('todos', JSON.stringify($scope.todos));[m
+[31m-    console.log("AA",localStorage);[m
+[31m-    console.log("$scope.saved",$scope.saved);[m
+[31m-    console.log("$scope.todos",$scope.todos);[m
+[32m+[m[32m    //console.log("AA",localStorage);[m
+[32m+[m[32m    //console.log("$scope.saved",$scope.saved);[m
+[32m+[m[32m    //console.log("$scope.todos",$scope.todos);[m
+ [m
+     //run id[m
+     angular.forEach($scope.todos,function(e){[m
+[36m@@ -38,24 +38,24 @@[m [mmyApp.controller('MainController', function($scope, $log, $filter, ngDialog) {[m
+     });[m
+ [m
+ [m
+[31m-    if($scope.maxId == '' || $scope.maxId == undefined){[m
+[32m+[m[32m    if(_idList == '' || _idList == undefined){[m
+         $scope.maxId = 0;[m
+     }else{[m
+         $scope.maxId = Math.max.apply(null, _idList);[m
+     }[m
+[31m-[m
+[32m+[m[32m    console.log('_idList',_idList)[m
+[32m+[m[32m    console.log('$scope.maxId',$scope.maxId)[m
+     $scope.todo = {}[m
+[31m-    //$scope.count = 0;[m
+[31m-[m
+ [m
+     $scope.addTodo = function() {[m
+ [m
+[32m+[m
+         if(($scope.todoText == '' || $scope.todoText == undefined)||[m
+             ($scope.todoDetail == '' || $scope.todoDetail == undefined)){[m
+             return;[m
+         };[m
+[31m-[m
+         $scope.maxId += 1;[m
+[32m+[m
+         console.log('$scope.maxId before push',$scope.maxId);[m
+ [m
+         $scope.todos.push({[m
