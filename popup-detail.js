@@ -51,15 +51,11 @@ angular.module('myApp').controller('popupDetailController', function($scope, $lo
                 console.log('last temps',$scope.temps);
                 console.log('last localStorage',localStorage);
 
-                $scope.close();
+                ngDialog.close('none',true);
             };
         };
 
 
-
-
-
-        //localStorage.setItem("todos", JSON.stringify(persons));
 
     }
 

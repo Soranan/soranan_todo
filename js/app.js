@@ -139,6 +139,7 @@ myApp.controller('MainController', function($scope, $log, $filter, ngDialog) {
             showClose: false,
             animation: true,
             closeByDocument: false,
+            closeByEscape: false,
             templateUrl: '../popup-detail.html',
             controller: 'popupDetailController',
             resolve:{
@@ -147,7 +148,8 @@ myApp.controller('MainController', function($scope, $log, $filter, ngDialog) {
                 }
             },
             preCloseCallback: function(value) {
-
+                console.log('return value',value);
+                    $scope.First();
             }
         });
 
